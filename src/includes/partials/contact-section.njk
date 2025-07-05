@@ -1,0 +1,81 @@
+<section
+	id="contact"
+	class="apply-section apply-bg-secondary scroll-mt-16"
+	role="region"
+	aria-labelledby="contact-section-title">
+	<div class="apply-wrapper py-16">
+		<header class="section-header animate-in">
+			<h2 id="contact-section-title" class="heading">Contact Us</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+				eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+		</header>
+		<div class="apply-content">
+			<div id="form-container" class="apply-form-container">
+				<div class="apply-form-fieldset animate-in">
+					<!-- contact form start -->
+					<form
+						id="contact-form"
+						class="apply-form"
+						action="#"
+						method="post">
+						<div
+							id="error-message"
+							class="apply-error-message hidden"></div>
+						<!-- error message container will populate with JS -->
+						<div class="form-fields">
+							<div class="form-field w-full">
+								<label for="name">Name</label>
+								<input
+									id="name"
+									type="text"
+									name="name"
+									placeholder="Name*"
+									required
+									class="w-full" />
+							</div>
+
+							<div class="form-field w-full">
+								<label for="email">Email</label>
+								<input
+									id="email"
+									type="email"
+									name="email"
+									placeholder="Email*"
+									required
+									class="w-full" />
+							</div>
+
+							<div class="form-field w-full">
+								<label for="message">Message</label>
+								<textarea
+									id="message"
+									name="message"
+									placeholder="Message*"
+									required
+									rows="8"
+									class="w-full"></textarea>
+							</div>
+
+							<div class="form-buttons">
+								<button
+									type="submit"
+									class="apply-btn-standard w-full">
+									Send
+								</button>
+							</div>
+						</div>
+					</form>
+					<!-- contact form end -->
+					<div
+						id="success-message"
+						class="apply-success-message hidden animate-in">
+						<h2>Thank you for your message!</h2>
+						<p>We will get back to you soon.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

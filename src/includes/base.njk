@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" class="sm:scroll-smooth">
+	<head>
+		<!-- meta -->
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>{{ meta_title }}</title>
+		<meta name="description" content="{{ meta_description }}" />
+		<meta name="robots" content="index,follow" />
+		<meta name="author" content="ML Media" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		{% if canonical %}
+		<link rel="canonical" href="{{ canonical }}" />
+		{% endif %}
+
+		<!-- css -->
+		<link rel="stylesheet" href="./assets/css/style.css" />
+
+		<!-- js -->
+		<script src="./assets/js/main.js"></script>
+
+		<!-- favicons -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./assets/brand/apple-touch-icon.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/brand/favicon-32x32.png" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./assets/brand/favicon-16x16.png" />
+	</head>
+
+	<body class="min-h-screen grid apply-bg-primary">
+		{% include "partials/navbar.njk" %} {% block content %}
+		{{ content | safe }}
+		{% endblock content %} {% include "partials/footer.njk" %}
+	</body>
+</html>

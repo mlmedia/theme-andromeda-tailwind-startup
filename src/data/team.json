@@ -1,0 +1,22 @@
+[
+	{
+		"name": "Joe Antonio",
+		"position": "Founder CEO",
+		"image": "./assets/images/people/ph-people-mj-1.png"
+	},
+	{
+		"name": "James Daeva",
+		"position": "Marketing",
+		"image": "./assets/images/people/ph-people-mj-3.png"
+	},
+	{
+		"name": "Daniel Emo",
+		"position": "Sales Manager",
+		"image": "./assets/images/people/ph-people-mj-2.png"
+	},
+	{
+		"name": "Toni Lana",
+		"position": "UI/UX Designer",
+		"image": "./assets/images/people/ph-people-mj-4.png"
+	}
+]

@@ -1,0 +1,38 @@
+<div
+	id="team"
+	class="apply-section apply-bg-primary scroll-mt-16"
+	role="region"
+	aria-labelledby="team-section-title">
+	<div class="apply-wrapper py-16">
+		<header class="section-header animate-in">
+			<h2 id="team-section-title" class="heading">Our Team</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+				eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+		</header>
+		<div class="apply-content">
+			<div class="apply-grid-2-4">
+				{%- for person in team -%}
+				<div class="apply-profile-card animate-in">
+					<div class="content">
+						<div class="image">
+							<img
+								src="{{ person.image }}"
+								alt="Image of {{ person.name }}" />
+						</div>
+						<div class="details">
+							<p class="name">
+								{{ person.name }}
+							</p>
+							<p class="position">
+								{{ person.position }}
+							</p>
+						</div>
+					</div>
+				</div>
+				{%- endfor -%}
+			</div>
+		</div>
+	</div>
+</div>

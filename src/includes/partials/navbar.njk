@@ -1,0 +1,226 @@
+<header id="navbar" class="apply-navbar apply-bg-primary">
+	<div class="apply-wrapper">
+		<div class="content">
+			<div class="brand">
+				<a href="#hero" class="brand-link" aria-label="logo">
+					Andromeda
+				</a>
+			</div>
+			<nav class="desktop-menu">
+				<a href="#services" class="nav-link">What We Do</a>
+				<a href="#portfolio" class="nav-link">Our Work</a>
+				<a href="#team" class="nav-link">Our Team</a>
+				<a href="#contact" class="nav-link">Contact</a>
+			</nav>
+			<div class="desktop-controls">
+				<!-- theme / dark mode toggle button for desktop -->
+				<button
+					id="theme-toggle"
+					type="button"
+					class="toggle-button"
+					aria-label="Toggle Dark Mode">
+					<span class="icons">
+						<svg
+							id="dark-icon"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="size-6">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+						</svg>
+						<svg
+							id="light-icon"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="size-6 hidden">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+						</svg>
+					</span>
+				</button>
+			</div>
+			<div class="mobile-controls">
+				<!-- dark mode toggle button for mobile -->
+				<button
+					id="theme-toggle-mobile"
+					type="button"
+					aria-label="Toggle Dark Mode"
+					class="toggle-button">
+					<span class="icons">
+						<svg
+							id="dark-icon-mobile"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="size-6">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+						</svg>
+						<svg
+							id="light-icon-mobile"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="size-6 hidden">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+						</svg>
+					</span>
+				</button>
+				<!-- menu toggle button for mobile -->
+				<button
+					id="menu-button"
+					type="button"
+					aria-label="Toggle Mobile Menu"
+					class="mobile-menu-button">
+					<span class="sr-only">Open menu</span>
+					<svg
+						class="h-6 w-6"
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="currentColor"
+						aria-hidden="true">
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M4 6h16M4 12h16M4 18h16" />
+					</svg>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!-- start mobile menu -->
+	<div id="mobile-menu" class="apply-mobile-menu hidden">
+		<div class="close-button">
+			<button
+				id="menu-close-button"
+				type="button"
+				aria-label="Close Mobile Menu">
+				<span class="sr-only">Close menu</span>
+				<svg
+					class="h-6 w-6"
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+					aria-hidden="true">
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M6 18L18 6M6 6l12 12" />
+				</svg>
+			</button>
+		</div>
+		<nav class="mobile-menu">
+			<div class="mobile-nav-links">
+				<a href="#hero" class="mobile-nav-link">Home</a>
+				<a href="#services" class="mobile-nav-link">What We Do</a>
+				<a href="#portfolio" class="mobile-nav-link">Our Work</a>
+				<a href="#team" class="mobile-nav-link">Our Team</a>
+				<a href="#contact" class="mobile-nav-link">Contact</a>
+			</div>
+		</nav>
+	</div>
+	<!-- end mobile menu -->
+</header>
+<!-- end header -->
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const menuButton = document.getElementById("menu-button");
+		const closeMenuButton = document.getElementById("menu-close-button");
+		const mobileMenu = document.getElementById("mobile-menu");
+		const themeToggle = document.getElementById("theme-toggle");
+		const themeToggleMobile = document.getElementById(
+			"theme-toggle-mobile"
+		);
+		const lightIcon = document.getElementById("light-icon");
+		const darkIcon = document.getElementById("dark-icon");
+		const lightIconMobile = document.getElementById("light-icon-mobile");
+		const darkIconMobile = document.getElementById("dark-icon-mobile");
+		const mobileLinks = document.querySelectorAll(".mobile-nav-link");
+
+		/* Function to open and close the mobile menu */
+		function openMenu() {
+			mobileMenu.classList.remove("hidden");
+		}
+
+		function closeMenu() {
+			mobileMenu.classList.add("hidden");
+		}
+
+		/* Open the menu when the menu button is clicked */
+		menuButton.addEventListener("click", openMenu);
+
+		/* Close the menu when the close button is clicked */
+		closeMenuButton.addEventListener("click", closeMenu);
+
+		/* Close the mobile menu when a link is clicked */
+		mobileLinks.forEach((link) => {
+			link.addEventListener("click", closeMenu);
+		});
+
+		/* Theme toggle function */
+		function applyTheme() {
+			if (document.documentElement.classList.toggle("dark")) {
+				localStorage.setItem("theme", "dark");
+				lightIcon.classList.add("hidden");
+				darkIcon.classList.remove("hidden");
+				lightIconMobile.classList.add("hidden");
+				darkIconMobile.classList.remove("hidden");
+			} else {
+				localStorage.setItem("theme", "light");
+				lightIcon.classList.remove("hidden");
+				darkIcon.classList.add("hidden");
+				lightIconMobile.classList.remove("hidden");
+				darkIconMobile.classList.add("hidden");
+			}
+		}
+
+		/* Load the previously saved theme */
+		function loadTheme() {
+			const theme = localStorage.getItem("theme");
+			if (theme === "dark") {
+				document.documentElement.classList.add("dark");
+				lightIcon.classList.add("hidden");
+				darkIcon.classList.remove("hidden");
+				lightIconMobile.classList.add("hidden");
+				darkIconMobile.classList.remove("hidden");
+			} else {
+				document.documentElement.classList.remove("dark");
+				lightIcon.classList.remove("hidden");
+				darkIcon.classList.add("hidden");
+				lightIconMobile.classList.remove("hidden");
+				darkIconMobile.classList.add("hidden");
+			}
+		}
+
+		themeToggle.addEventListener("click", applyTheme);
+		themeToggleMobile.addEventListener("click", applyTheme);
+
+		/* Load theme on page load */
+		loadTheme();
+	});
+</script>

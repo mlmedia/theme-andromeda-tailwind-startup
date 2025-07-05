@@ -1,0 +1,146 @@
+<section
+	id="portfolio"
+	class="apply-section apply-bg-secondary scroll-mt-16"
+	role="region"
+	aria-labelledby="work-section-title">
+	<div class="apply-wrapper py-16">
+		<header class="section-header animate-in">
+			<h2 id="work-section-title" class="heading">Our Work</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+				eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			</p>
+		</header>
+
+		<div class="apply-content">
+			<div class="apply-grid-2-3">
+				{%- for item in work %}
+				<figure class="apply-gallery-card animate-in">
+					<div class="content">
+						<a
+							href="#"
+							class="open-modal"
+							data-image="{{ item.image }}"
+							data-caption="Sample caption text for {{
+								item.title
+							}}">
+							<img
+								src="{{ item.image }}"
+								alt="{{ item.title }}" />
+							<div class="caption">
+								<h3 class="title">
+									{{ item.title }}
+								</h3>
+							</div>
+						</a>
+					</div>
+				</figure>
+				{%- endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- modal start -->
+<div id="lightbox-modal" class="apply-lightbox-modal hidden">
+	<div class="wrapper">
+		<button id="close-modal" class="close-modal">&times;</button>
+		<div class="content">
+			<button id="prev-image" class="nav-prev hidden">&lsaquo;</button>
+			<div class="image-container">
+				<img
+					id="modal-image"
+					src=""
+					class="image"
+					alt="Enlarged Image"
+					width="100%"
+					height="auto" />
+				<div id="image-caption" class="caption">
+					<!-- Caption will be inserted here -->
+				</div>
+			</div>
+			<button id="next-image" class="nav-next hidden">&rsaquo;</button>
+		</div>
+	</div>
+</div>
+<!-- modal end -->
+
+<!-- js start -->
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const modal = document.getElementById("lightbox-modal");
+		const modalImage = document.getElementById("modal-image");
+		const imageCaption = document.getElementById("image-caption");
+		const closeModalButton = document.getElementById("close-modal");
+		const prevImageButton = document.getElementById("prev-image");
+		const nextImageButton = document.getElementById("next-image");
+
+		const images = Array.from(document.querySelectorAll(".open-modal"));
+		let currentIndex = -1;
+
+		images.forEach((element, index) => {
+			element.addEventListener("click", function (event) {
+				event.preventDefault();
+				const imagePath = this.getAttribute("data-image");
+				const captionText = this.getAttribute("data-caption");
+				currentIndex = index;
+				openModal(imagePath, captionText);
+			});
+		});
+
+		closeModalButton.addEventListener("click", closeModal);
+		prevImageButton.addEventListener("click", showPrevImage);
+		nextImageButton.addEventListener("click", showNextImage);
+
+		modal.addEventListener("click", function (event) {
+			if (event.target === modal) {
+				closeModal();
+			}
+		});
+
+		function openModal(imagePath, captionText) {
+			modalImage.src = imagePath;
+			imageCaption.innerText = captionText || "No caption available";
+			modal.classList.remove("hidden");
+			modal.classList.add("flex");
+			toggleArrows();
+		}
+
+		function closeModal() {
+			modal.classList.add("hidden");
+			modal.classList.remove("flex");
+			modalImage.src = "";
+			imageCaption.innerText = "";
+		}
+
+		function showPrevImage() {
+			currentIndex =
+				currentIndex - 1 + images.length < 0
+					? images.length - 1
+					: (currentIndex - 1 + images.length) % images.length;
+			const imagePath = images[currentIndex].getAttribute("data-image");
+			const captionText =
+				images[currentIndex].getAttribute("data-caption");
+			openModal(imagePath, captionText);
+		}
+
+		function showNextImage() {
+			currentIndex = (currentIndex + 1) % images.length;
+			const imagePath = images[currentIndex].getAttribute("data-image");
+			const captionText =
+				images[currentIndex].getAttribute("data-caption");
+			openModal(imagePath, captionText);
+		}
+
+		function toggleArrows() {
+			if (images.length > 1) {
+				prevImageButton.classList.remove("hidden");
+				nextImageButton.classList.remove("hidden");
+			} else {
+				prevImageButton.classList.add("hidden");
+				nextImageButton.classList.add("hidden");
+			}
+		}
+	});
+</script>
+<!-- js end -->
