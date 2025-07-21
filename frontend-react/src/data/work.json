@@ -1,0 +1,32 @@
+[
+	{
+		"image": "./assets/images/photos/ph-photos-pixabay-1.jpg",
+		"title": "Logo Design",
+		"category": "Branding"
+	},
+	{
+		"image": "./assets/images/photos/ph-photos-pixabay-2.jpg",
+		"title": "Web Development",
+		"category": "Web"
+	},
+	{
+		"image": "./assets/images/photos/ph-photos-pixabay-3.jpg",
+		"title": "Graphic Design",
+		"category": "Graphic"
+	},
+	{
+		"image": "./assets/images/photos/ph-photos-pixabay-7.jpg",
+		"title": "Logo Design",
+		"category": "Branding"
+	},
+	{
+		"image": "./assets/images/photos/ph-photos-pixabay-8.jpg",
+		"title": "Web Development",
+		"category": "Web"
+	},
+	{
+		"image": "./assets/images/photos/ph-photos-pixabay-10.jpg",
+		"title": "App Design",
+		"category": "App"
+	}
+]
