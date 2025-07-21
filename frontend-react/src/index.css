@@ -1,0 +1,688 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/** 
+ * fonts 
+ */
+/* noto sans */
+@font-face {
+	font-family: "Noto Sans";
+	src: url("./assets/fonts/noto-sans/notosans-regular-webfont.woff2")
+			format("woff2"),
+		url("./assets/fonts/noto-sans/notosans-regular-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Noto Sans";
+	src: url("./assets/fonts/noto-sans/notosans-bold-webfont.woff2") format("woff2"),
+		url("./assets/fonts/noto-sans/notosans-bold-webfont.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Noto Sans";
+	src: url("./assets/fonts/noto-sans/notosans-italic-webfont.woff2") format("woff2"),
+		url("./assets/fonts/noto-sans/notosans-italic-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Noto Sans";
+	src: url("./assets/fonts/noto-sans/notosans-light-webfont.woff2") format("woff2"),
+		url("./assets/fonts/noto-sans/notosans-light-webfont.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Noto Sans";
+	src: url("./assets/fonts/noto-sans/notosans-semibold-webfont.woff2")
+			format("woff2"),
+		url("./assets/fonts/noto-sans/notosans-semibold-webfont.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* josefin slab */
+@font-face {
+	font-family: "Josefin Slab";
+	src: url("./assets/fonts/josefin-slab/JosefinSlab-Regular.woff2") format("woff2"),
+		url("./assets/fonts/josefin-slab/JosefinSlab-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Josefin Slab";
+	src: url("./assets/fonts/josefin-slab/JosefinSlab-SemiBold.woff2") format("woff2"),
+		url("./assets/fonts/josefin-slab/JosefinSlab-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Josefin Slab";
+	src: url("./assets/fonts/josefin-slab/JosefinSlab-Bold.woff2") format("woff2"),
+		url("./assets/fonts/josefin-slab/JosefinSlab-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Josefin Slab";
+	src: url("./assets/fonts/josefin-slab/JosefinSlab-BoldItalic.woff2")
+			format("woff2"),
+		url("./assets/fonts/josefin-slab/JosefinSlab-BoldItalic.woff") format("woff");
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Josefin Slab";
+	src: url("./assets/fonts/josefin-slab/JosefinSlab-Light.woff2") format("woff2"),
+		url("./assets/fonts/josefin-slab/JosefinSlab-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Josefin Slab";
+	src: url("./assets/fonts/josefin-slab/JosefinSlab-Italic.woff2") format("woff2"),
+		url("./assets/fonts/josefin-slab/JosefinSlab-Italic.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+/* josefin sans */
+@font-face {
+	font-family: "Josefin Sans";
+	src: url("./assets/fonts/josefin-sans/JosefinSans-Bold.woff2") format("woff2"),
+		url("./assets/fonts/josefin-sans/JosefinSans-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Josefin Sans";
+	src: url("./assets/fonts/josefin-sans/JosefinSans-BoldItalic.woff2")
+			format("woff2"),
+		url("./assets/fonts/josefin-sans/JosefinSans-BoldItalic.woff") format("woff");
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Josefin Sans";
+	src: url("./assets/fonts/josefin-sans/JosefinSans-Italic.woff2") format("woff2"),
+		url("./assets/fonts/josefin-sans/JosefinSans-Italic.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Josefin Sans";
+	src: url("./assets/fonts/josefin-sans/JosefinSans-Regular.woff2") format("woff2"),
+		url("./assets/fonts/josefin-sans/JosefinSans-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Josefin Sans";
+	src: url("./assets/fonts/josefin-sans/JosefinSans-Light.woff2") format("woff2"),
+		url("./assets/fonts/josefin-sans/JosefinSans-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Josefin Sans";
+	src: url("./assets/fonts/josefin-sans/JosefinSans-SemiBold.woff2") format("woff2"),
+		url("./assets/fonts/josefin-sans/JosefinSans-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+/** 
+ * global styles 
+ */
+body {
+	font-family: "Noto Sans", sans-serif;
+	@apply text-gray-600 dark:text-gray-300 leading-8;
+}
+
+p {
+	@apply mb-6 leading-8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: "Josefin Sans";
+	@apply text-gray-900 dark:text-gray-100 font-semibold leading-8;
+}
+
+h1 {
+	@apply text-2xl mb-6 leading-10;
+}
+
+h2 {
+	@apply text-xl mb-4 leading-8;
+}
+
+h3 {
+	@apply text-lg mb-2 leading-8;
+}
+
+strong {
+	@apply text-gray-900 dark:text-gray-200;
+}
+
+ul {
+	@apply list-disc list-inside mb-8;
+}
+
+img {
+	@apply max-w-full h-auto;
+}
+
+a:hover .arrow {
+	transform: translateX(0.25rem);
+}
+
+/**
+ * typography
+ */
+.font-display {
+	font-family: "Josefin Sans";
+}
+
+.apply-highlight-heading {
+	@apply md:text-lg md:leading-loose max-w-2xl text-center mx-auto;
+}
+
+/** 
+ * common classes (apply-xxx)
+ */
+/* layout */
+.apply-wrapper {
+	@apply max-w-6xl mx-auto px-6 relative;
+}
+
+.apply-narrow {
+	@apply max-w-3xl md:max-w-4xl px-6 mx-auto relative;
+}
+
+.apply-content {
+	@apply relative w-full;
+}
+
+/* sections */
+.apply-section {
+	@apply relative;
+}
+
+.apply-section .section-header {
+	@apply text-center mb-8;
+}
+
+.apply-section .section-header .heading {
+	@apply text-3xl;
+}
+
+.apply-section .section-header p {
+	@apply md:text-lg md:leading-loose max-w-2xl text-center mx-auto pb-8;
+}
+
+/* backgrounds */
+.apply-bg-primary {
+	@apply bg-white dark:bg-gray-950;
+}
+
+.apply-bg-secondary {
+	@apply bg-gray-50 dark:bg-gray-900;
+}
+
+.apply-bg-tertiary {
+	@apply bg-gray-100 dark:bg-gray-800;
+}
+
+/* grids */
+.apply-grid-2-3 {
+	@apply grid sm:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+.apply-grid-2-4 {
+	@apply grid sm:grid-cols-2 lg:grid-cols-4 gap-8;
+}
+
+.apply-grid-3-4-8 {
+	@apply grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-8 gap-8;
+}
+
+.apply-grid-3-4-6-8 {
+	@apply grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-8;
+}
+
+/* === cards === */
+/* standard card */
+.apply-card {
+	@apply flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-md dark:bg-gray-950 dark:border-gray-800;
+}
+
+.apply-card-image {
+	@apply h-64 md:h-56 flex flex-col justify-center items-center bg-blue-600 rounded-t-md overflow-hidden;
+}
+
+.apply-card-content {
+	@apply p-4 md:p-6;
+}
+
+.apply-card-content .title {
+	@apply mb-0;
+}
+
+.apply-card-content .body {
+	@apply mt-4 mb-0;
+}
+
+/* info card (w/ icon) */
+.apply-info-card {
+	@apply flex flex-col justify-center items-center min-h-64 h-auto bg-white border border-neutral-200 shadow-sm rounded-md transition-all duration-300 hover:-translate-y-2 dark:bg-gray-700 dark:border-gray-800;
+}
+
+.apply-info-card .content {
+	@apply flex flex-col items-center justify-center text-center p-8 h-full;
+}
+
+.apply-info-card .content .icon {
+	@apply inline-block mb-4 text-gray-800 dark:text-white;
+}
+
+.apply-info-card .content .icon img {
+	@apply text-gray-700 dark:text-white;
+}
+
+.apply-info-card .content .title {
+	@apply text-lg leading-normal mb-2 font-semibold;
+}
+
+/* profile / people card */
+.apply-profile-card {
+	@apply flex flex-col h-full;
+}
+
+.apply-profile-card .content {
+	@apply relative overflow-hidden mb-6;
+}
+
+.apply-profile-card .content .image {
+	@apply relative overflow-hidden px-12 md:px-8;
+}
+
+.apply-profile-card .content .image img {
+	@apply max-w-full h-auto mx-auto rounded-full bg-gray-50 grayscale;
+}
+
+.apply-profile-card .content .details {
+	@apply py-6 text-center;
+}
+
+.apply-profile-card .content .details .name {
+	@apply text-gray-900 dark:text-gray-100 text-2xl lg:text-xl leading-normal font-bold mb-2;
+}
+
+.apply-profile-card .content .details .position {
+	@apply text-gray-600 dark:text-gray-300 leading-relaxed font-light;
+}
+
+/* gallery card */
+.apply-gallery-card {
+	@apply max-w-full w-full;
+}
+
+.apply-gallery-card .content {
+	@apply relative overflow-hidden cursor-pointer h-64 w-full;
+}
+
+.apply-gallery-card .content img {
+	@apply block w-full h-full object-cover transform duration-500 grayscale hover:scale-110;
+}
+
+.apply-gallery-card .content:hover .caption,
+.apply-gallery-card .content:focus-within .caption {
+	@apply opacity-80;
+}
+
+.apply-gallery-card .content .caption {
+	@apply absolute inset-x-0 bottom-0 h-20 transition-opacity duration-500 ease-in opacity-0 overflow-hidden px-4 py-2 text-gray-100 bg-black text-center;
+}
+
+.apply-gallery-card .content .caption .title {
+	@apply py-4 text-white text-xl;
+}
+
+/* buttons */
+.apply-btn-standard {
+	@apply text-white text-center border-transparent border bg-gradient-to-br from-purple-600 to-blue-500 hover:ring-4 hover:outline-none hover:ring-blue-300 dark:hover:ring-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg px-8 py-2 transition-all duration-100;
+}
+
+/* links */
+.apply-link,
+.apply-content p a {
+	@apply transition duration-100 text-indigo-800 dark:text-indigo-400 underline;
+}
+
+/* forms */
+.apply-form-container {
+	@apply mx-auto max-w-screen-sm py-4 min-h-96;
+}
+
+.apply-form-fieldset {
+	@apply w-full flex flex-col border-2 border-gray-200 rounded-xl p-8 lg:p-12 dark:border-gray-800 bg-gray-100 dark:bg-gray-900 opacity-20 dark:opacity-20;
+}
+
+.apply-form {
+	@apply w-full mx-auto;
+}
+
+.form-header {
+	@apply relative w-full text-center py-4;
+}
+
+.form-fields {
+	@apply relative grid gap-4 w-full;
+}
+
+.form-fields .form-field label {
+	@apply sr-only mb-2 w-full text-sm;
+}
+
+.form-fields .form-field input,
+.form-fields .form-field textarea {
+	@apply w-full bg-white dark:bg-gray-950 outline-none transition duration-100 p-4 rounded-lg text-base dark:text-gray-50 border-2 border-indigo-300 focus:border-indigo-200 dark:border-gray-500 dark:focus:border-indigo-600;
+}
+
+.form-buttons {
+	@apply flex items-center justify-between w-full;
+}
+
+.apply-success-message {
+	@apply text-center py-4;
+}
+
+.apply-success-message h2 {
+	@apply text-2xl md:text-3xl;
+}
+
+.apply-error-message {
+	@apply text-red-500 mb-4;
+}
+
+/**
+ * navbar / header 
+ */
+.apply-navbar {
+	@apply fixed top-0 left-0 right-0 z-40 border-b-2 border-gray-200 dark:border-gray-800;
+}
+
+.apply-navbar .content {
+	@apply flex justify-between items-center py-4;
+}
+
+.apply-navbar .brand {
+	@apply flex justify-start w-0 flex-1;
+}
+
+.apply-navbar .brand .brand-link {
+	@apply inline-flex items-center text-gray-950 dark:text-gray-100 text-xl lg:text-2xl font-bold gap-2;
+}
+
+.apply-navbar .desktop-menu {
+	@apply hidden lg:flex space-x-10;
+}
+
+.apply-navbar .desktop-menu .nav-link {
+	@apply font-medium text-gray-500 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white;
+}
+
+.apply-navbar .desktop-controls {
+	@apply hidden lg:flex items-center justify-end lg:flex-1 lg:w-0;
+}
+
+.apply-navbar .mobile-controls {
+	@apply flex lg:hidden items-center space-x-2;
+}
+
+.apply-navbar .toggle-button {
+	@apply text-gray-400 dark:text-gray-300 hover:text-gray-500 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 rounded-full leading-none;
+}
+
+.apply-navbar .toggle-button .icons {
+	@apply inline-flex flex-shrink-0 justify-center items-center size-9 font-medium rounded-full text-gray-800 hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-800;
+}
+
+.apply-navbar .mobile-menu-button {
+	@apply bg-white dark:bg-indigo-950 p-2 inline-flex items-center justify-center text-gray-400 dark:text-gray-300 hover:text-gray-500 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-indigo-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 rounded-full;
+}
+
+/* mobile menu */
+.apply-mobile-menu {
+	@apply fixed inset-0 bg-white dark:bg-indigo-950 bg-opacity-95 dark:bg-opacity-95 z-50;
+}
+
+.apply-mobile-menu .close-button {
+	@apply absolute top-4 right-6;
+}
+
+.apply-mobile-menu .close-button button {
+	@apply bg-white dark:bg-indigo-950 p-2 inline-flex items-center justify-center text-gray-400 dark:text-gray-300 hover:text-gray-500 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-indigo-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 rounded-full;
+}
+
+.apply-mobile-menu .mobile-menu {
+	@apply apply-bg-secondary flex flex-col items-center justify-center h-full w-full px-4 py-4;
+}
+
+.apply-mobile-menu .mobile-menu .mobile-nav-links {
+	@apply space-y-8 text-center text-lg w-full;
+}
+
+.apply-mobile-menu .mobile-menu .mobile-nav-links .mobile-nav-link {
+	@apply block w-full font-medium text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white rounded focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-400 text-xl p-4;
+}
+
+/**
+ * hero 
+ */
+.apply-hero-section {
+	@apply apply-bg-secondary pt-16;
+}
+
+.apply-hero-section .apply-wrapper {
+	@apply min-h-[calc(100vh-6rem)] flex items-center justify-center py-16;
+}
+
+.apply-hero-section .apply-content {
+	@apply mx-auto max-w-3xl text-center;
+}
+
+.apply-hero-section .apply-content .title {
+	@apply bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-4xl sm:text-5xl font-extrabold text-transparent mb-2;
+}
+
+.apply-hero-section .apply-content .subtitle {
+	@apply text-gray-900 dark:text-gray-100 text-xl font-semibold sm:text-2xl mb-4;
+}
+
+.apply-hero-section .apply-content .text {
+	@apply mx-auto max-w-xl md:text-lg md:leading-loose py-2;
+}
+
+.apply-hero-section .apply-content .cta-buttons {
+	@apply mt-8 flex flex-wrap justify-center gap-4 py-4;
+}
+
+/**
+ * footer 
+ */
+footer {
+	@apply text-gray-800 dark:text-gray-200 border-t-2 border-gray-200 dark:border-gray-800;
+}
+
+footer .content {
+	@apply mt-auto w-full pt-8 pb-16 px-8 mx-auto text-center;
+}
+
+footer .brand {
+	@apply mb-4;
+}
+
+footer .brand a {
+	@apply flex-none text-xl font-bold;
+}
+
+footer .copyright {
+	@apply mb-4;
+}
+
+footer .social-links {
+	@apply mt-3 space-x-2;
+}
+
+footer .social-links .social-link {
+	@apply size-12 inline-flex justify-center items-center gap-x-8 text-sm font-semibold rounded-full border border-transparent text-gray-600 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-gray-200 dark:hover:bg-gray-600 dark:focus:bg-gray-600;
+}
+
+footer .apply-link {
+	@apply inline-flex gap-x-2 text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200;
+}
+
+/** 
+ * utility pages: 404, maintenance, coming soon, etc. 
+ */
+.utility h2 {
+	@apply text-3xl mb-6 italic;
+}
+.utility a {
+	@apply text-indigo-300;
+}
+
+/** 
+ * animation 
+ */
+.menu-enter {
+	opacity: 0;
+	transform: scale(0.95);
+}
+.menu-enter-active {
+	opacity: 1;
+	transform: scale(1);
+	transition: opacity 200ms, transform 200ms;
+}
+.menu-leave {
+	opacity: 1;
+	transform: scale(1);
+}
+.menu-leave-active {
+	opacity: 0;
+	transform: scale(0.95);
+	transition: opacity 200ms, transform 200ms;
+}
+
+/* animation on scroll to visible */
+.animate-in {
+	opacity: 0;
+	transform: translateY(0.5rem);
+	transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.animate-in.fade-in {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/** 
+ * lightbox modal 
+ */
+body.no-scroll {
+	overflow: hidden;
+}
+
+.apply-lightbox-modal {
+	@apply fixed inset-0 z-50 items-center justify-center bg-black bg-opacity-80 p-16;
+}
+
+.apply-lightbox-modal .close-modal {
+	@apply fixed z-50 top-4 right-4 text-white text-5xl;
+}
+
+.apply-lightbox-modal .wrapper {
+	@apply flex;
+}
+
+.apply-lightbox-modal .content {
+	@apply relative max-w-full max-h-screen flex justify-center items-center;
+}
+
+.apply-lightbox-modal .nav-prev,
+.apply-lightbox-modal .nav-next {
+	@apply fixed text-white text-7xl z-50;
+}
+
+.apply-lightbox-modal .nav-prev {
+	@apply left-4;
+}
+
+.apply-lightbox-modal .nav-next {
+	@apply right-4;
+}
+
+.apply-lightbox-modal .image-container {
+	@apply flex flex-col items-center relative;
+}
+
+.apply-lightbox-modal .image-container .image {
+	@apply max-w-full max-h-[calc(100vh-6rem)] object-contain;
+}
+
+.apply-lightbox-modal .caption {
+	@apply absolute bottom-0 left-0 w-full bg-black bg-opacity-80 text-white p-4 md:p-8 text-center text-base leading-loose;
+}
+
+/* 404 page */
+.error-404 {
+	@apply text-center;
+}
+
+.error-404 h1,
+.error-404 h2 {
+	@apply text-4xl;
+}
+
+.error-404 a {
+	@apply apply-link;
+}
