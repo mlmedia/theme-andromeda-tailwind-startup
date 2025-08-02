@@ -20,15 +20,15 @@ function Contact() {
 				<div className="apply-content">
 					<div id="form-container" className="apply-form-container">
 						<div className="apply-form-fieldset animate-in">
-                                                        <form
-                                                                id="contact-form"
-                                                                className="apply-form"
-                                                                action="#"
-                                                                method="post">
-                                                                <div
-                                                                        id="error-message"
-                                                                        className="apply-error-message hidden"></div>
-                                                                <div className="form-fields">
+							<form
+								id="contact-form"
+								className="apply-form"
+								action="#"
+								method="post">
+								<div
+									id="error-message"
+									className="apply-error-message hidden"></div>
+								<div className="form-fields">
 									<div className="form-field w-full">
 										<label htmlFor="name">Name</label>
 										<input
@@ -69,19 +69,19 @@ function Contact() {
 											Send
 										</button>
 									</div>
-                                                                </div>
-                                                        </form>
-                                                        <div
-                                                                id="success-message"
-                                                                className="apply-success-message hidden animate-in">
-                                                                <h2>Thank you for your message!</h2>
-                                                                <p>We will get back to you soon.</p>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                </section>
+								</div>
+							</form>
+							<div
+								id="success-message"
+								className="apply-success-message hidden animate-in">
+								<h2>Thank you for your message!</h2>
+								<p>We will get back to you soon.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	);
 }
 
