@@ -63,9 +63,9 @@
 /* josefin slab */
 @font-face {
 	font-family: "Josefin Slab";
-	src: url("/assets/fonts/josefin-slab/JosefinSlab-Regular.woff2")
+	src: url("/assets/fonts/josefin-slab/josefinslab-regular.woff2")
 			format("woff2"),
-		url("/assets/fonts/josefin-slab/JosefinSlab-Regular.woff")
+		url("/assets/fonts/josefin-slab/josefinslab-regular.woff")
 			format("woff");
 	font-weight: normal;
 	font-style: normal;
@@ -74,9 +74,9 @@
 
 @font-face {
 	font-family: "Josefin Slab";
-	src: url("/assets/fonts/josefin-slab/JosefinSlab-SemiBold.woff2")
+	src: url("/assets/fonts/josefin-slab/josefinslab-semibold.woff2")
 			format("woff2"),
-		url("/assets/fonts/josefin-slab/JosefinSlab-SemiBold.woff")
+		url("/assets/fonts/josefin-slab/josefinslab-semibold.woff")
 			format("woff");
 	font-weight: 600;
 	font-style: normal;
@@ -85,9 +85,9 @@
 
 @font-face {
 	font-family: "Josefin Slab";
-	src: url("/assets/fonts/josefin-slab/JosefinSlab-Bold.woff2")
+	src: url("/assets/fonts/josefin-slab/josefinslab-bold.woff2")
 			format("woff2"),
-		url("/assets/fonts/josefin-slab/JosefinSlab-Bold.woff") format("woff");
+		url("/assets/fonts/josefin-slab/josefinslab-bold.woff") format("woff");
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
@@ -95,9 +95,9 @@
 
 @font-face {
 	font-family: "Josefin Slab";
-	src: url("/assets/fonts/josefin-slab/JosefinSlab-BoldItalic.woff2")
+	src: url("/assets/fonts/josefin-slab/josefinslab-bolditalic.woff2")
 			format("woff2"),
-		url("/assets/fonts/josefin-slab/JosefinSlab-BoldItalic.woff")
+		url("/assets/fonts/josefin-slab/josefinslab-bolditalic.woff")
 			format("woff");
 	font-weight: bold;
 	font-style: italic;
@@ -106,9 +106,9 @@
 
 @font-face {
 	font-family: "Josefin Slab";
-	src: url("/assets/fonts/josefin-slab/JosefinSlab-Light.woff2")
+	src: url("/assets/fonts/josefin-slab/josefinslab-light.woff2")
 			format("woff2"),
-		url("/assets/fonts/josefin-slab/JosefinSlab-Light.woff") format("woff");
+		url("/assets/fonts/josefin-slab/josefinslab-light.woff") format("woff");
 	font-weight: 300;
 	font-style: normal;
 	font-display: swap;
@@ -116,9 +116,9 @@
 
 @font-face {
 	font-family: "Josefin Slab";
-	src: url("/assets/fonts/josefin-slab/JosefinSlab-Italic.woff2")
+	src: url("/assets/fonts/josefin-slab/josefinslab-italic.woff2")
 			format("woff2"),
-		url("/assets/fonts/josefin-slab/JosefinSlab-Italic.woff") format("woff");
+		url("/assets/fonts/josefin-slab/josefinslab-italic.woff") format("woff");
 	font-weight: normal;
 	font-style: italic;
 	font-display: swap;
@@ -127,9 +127,9 @@
 /* josefin sans */
 @font-face {
 	font-family: "Josefin Sans";
-	src: url("/assets/fonts/josefin-sans/JosefinSans-Bold.woff2")
+	src: url("/assets/fonts/josefin-sans/josefinsans-bold.woff2")
 			format("woff2"),
-		url("/assets/fonts/josefin-sans/JosefinSans-Bold.woff") format("woff");
+		url("/assets/fonts/josefin-sans/josefinsans-bold.woff") format("woff");
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
@@ -137,9 +137,9 @@
 
 @font-face {
 	font-family: "Josefin Sans";
-	src: url("/assets/fonts/josefin-sans/JosefinSans-BoldItalic.woff2")
+	src: url("/assets/fonts/josefin-sans/josefinsans-bolditalic.woff2")
 			format("woff2"),
-		url("/assets/fonts/josefin-sans/JosefinSans-BoldItalic.woff")
+		url("/assets/fonts/josefin-sans/josefinsans-bolditalic.woff")
 			format("woff");
 	font-weight: bold;
 	font-style: italic;
@@ -148,9 +148,9 @@
 
 @font-face {
 	font-family: "Josefin Sans";
-	src: url("/assets/fonts/josefin-sans/JosefinSans-Italic.woff2")
+	src: url("/assets/fonts/josefin-sans/josefinsans-italic.woff2")
 			format("woff2"),
-		url("/assets/fonts/josefin-sans/JosefinSans-Italic.woff") format("woff");
+		url("/assets/fonts/josefin-sans/josefinsans-italic.woff") format("woff");
 	font-weight: normal;
 	font-style: italic;
 	font-display: swap;
@@ -158,9 +158,9 @@
 
 @font-face {
 	font-family: "Josefin Sans";
-	src: url("/assets/fonts/josefin-sans/JosefinSans-Regular.woff2")
+	src: url("/assets/fonts/josefin-sans/josefinsans-regular.woff2")
 			format("woff2"),
-		url("/assets/fonts/josefin-sans/JosefinSans-Regular.woff")
+		url("/assets/fonts/josefin-sans/josefinsans-regular.woff")
 			format("woff");
 	font-weight: normal;
 	font-style: normal;
@@ -169,9 +169,9 @@
 
 @font-face {
 	font-family: "Josefin Sans";
-	src: url("/assets/fonts/josefin-sans/JosefinSans-Light.woff2")
+	src: url("/assets/fonts/josefin-sans/josefinsans-light.woff2")
 			format("woff2"),
-		url("/assets/fonts/josefin-sans/JosefinSans-Light.woff") format("woff");
+		url("/assets/fonts/josefin-sans/josefinsans-light.woff") format("woff");
 	font-weight: 300;
 	font-style: normal;
 	font-display: swap;
@@ -179,9 +179,9 @@
 
 @font-face {
 	font-family: "Josefin Sans";
-	src: url("/assets/fonts/josefin-sans/JosefinSans-SemiBold.woff2")
+	src: url("/assets/fonts/josefin-sans/josefinsans-semibold.woff2")
 			format("woff2"),
-		url("/assets/fonts/josefin-sans/JosefinSans-SemiBold.woff")
+		url("/assets/fonts/josefin-sans/josefinsans-semibold.woff")
 			format("woff");
 	font-weight: 600;
 	font-style: normal;
