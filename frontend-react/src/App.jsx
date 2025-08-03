@@ -8,37 +8,37 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
-        useEffect(() => {
-                const observerOptions = {
-                        root: null,
-                        rootMargin: "0px",
-                        threshold: 0.1,
-                };
+	useEffect(() => {
+		const observerOptions = {
+			root: null,
+			rootMargin: "0px",
+			threshold: 0.1,
+		};
 
-                const observerCallback = (entries, observer) => {
-                        entries.forEach((entry) => {
-                                if (entry.isIntersecting) {
-                                        entry.target.classList.add("fade-in");
-                                        observer.unobserve(entry.target);
-                                }
-                        });
-                };
+		const observerCallback = (entries, observer) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add("fade-in");
+					observer.unobserve(entry.target);
+				}
+			});
+		};
 
-                const observer = new IntersectionObserver(
-                        observerCallback,
-                        observerOptions
-                );
+		const observer = new IntersectionObserver(
+			observerCallback,
+			observerOptions
+		);
 
-                document
-                        .querySelectorAll(".animate-in")
-                        .forEach((element) => observer.observe(element));
+		document
+			.querySelectorAll(".animate-in")
+			.forEach((element) => observer.observe(element));
 
-                return () => observer.disconnect();
-        }, []);
+		return () => observer.disconnect();
+	}, []);
 
-        return (
-                <>
-                        <Navbar />
+	return (
+		<>
+			<Navbar />
 			<Hero />
 			<Services />
 			<Portfolio />
