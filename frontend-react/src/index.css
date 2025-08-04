@@ -389,15 +389,15 @@ a:hover .arrow {
 }
 
 .apply-gallery-card .content {
-        @apply relative overflow-hidden cursor-pointer h-64 w-full;
+	@apply relative overflow-hidden cursor-pointer h-64 w-full;
 }
 
 .apply-gallery-card .content button {
-        @apply block w-full h-full;
+	@apply block w-full h-full;
 }
 
 .apply-gallery-card .content img {
-        @apply block w-full h-full object-cover transform duration-500 grayscale hover:scale-110;
+	@apply block w-full h-full object-cover transform duration-500 grayscale hover:scale-110;
 }
 
 .apply-gallery-card .content:hover .caption,
