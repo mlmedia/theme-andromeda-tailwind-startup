@@ -1,0 +1,22 @@
+{% extends "base.njk" %}
+
+{% block content %}
+<main id="components" class="flex">
+  <aside class="w-64 p-6 border-r border-gray-200 dark:border-gray-700">
+    <nav class="space-y-2">
+      <a href="/components/alerts/" class="block">Alerts</a>
+      <a href="/components/buttons/" class="block">Buttons</a>
+      <a href="/components/cards/" class="block">Cards</a>
+      <a href="/components/forms/" class="block">Forms</a>
+      <a href="/components/image-gallery/" class="block">Image Gallery</a>
+      <a href="/components/login-form/" class="block">Login Form</a>
+      <a href="/components/modals/" class="block">Modals</a>
+      <a href="/components/team-sections/" class="block">Team Sections</a>
+      <a href="/components/testimonials/" class="block">Testimonials</a>
+    </nav>
+  </aside>
+  <section class="flex-1 p-6">
+    {{ content | safe }}
+  </section>
+</main>
+{% endblock content %}
