@@ -7,47 +7,47 @@
  */
 /* noto sans */
 @font-face {
-	font-family: "Noto Sans";
-	src: url("../fonts/noto-sans/notosans-regular-webfont.woff2")
-			format("woff2"),
-		url("../fonts/noto-sans/notosans-regular-webfont.woff") format("woff");
+	font-family: 'Noto Sans';
+	src: url('../fonts/noto-sans/notosans-regular-webfont.woff2')
+			format('woff2'),
+		url('../fonts/noto-sans/notosans-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Noto Sans";
-	src: url("../fonts/noto-sans/notosans-bold-webfont.woff2") format("woff2"),
-		url("../fonts/noto-sans/notosans-bold-webfont.woff") format("woff");
+	font-family: 'Noto Sans';
+	src: url('../fonts/noto-sans/notosans-bold-webfont.woff2') format('woff2'),
+		url('../fonts/noto-sans/notosans-bold-webfont.woff') format('woff');
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Noto Sans";
-	src: url("../fonts/noto-sans/notosans-italic-webfont.woff2") format("woff2"),
-		url("../fonts/noto-sans/notosans-italic-webfont.woff") format("woff");
+	font-family: 'Noto Sans';
+	src: url('../fonts/noto-sans/notosans-italic-webfont.woff2') format('woff2'),
+		url('../fonts/noto-sans/notosans-italic-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: italic;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Noto Sans";
-	src: url("../fonts/noto-sans/notosans-light-webfont.woff2") format("woff2"),
-		url("../fonts/noto-sans/notosans-light-webfont.woff") format("woff");
+	font-family: 'Noto Sans';
+	src: url('../fonts/noto-sans/notosans-light-webfont.woff2') format('woff2'),
+		url('../fonts/noto-sans/notosans-light-webfont.woff') format('woff');
 	font-weight: 300;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Noto Sans";
-	src: url("../fonts/noto-sans/notosans-semibold-webfont.woff2")
-			format("woff2"),
-		url("../fonts/noto-sans/notosans-semibold-webfont.woff") format("woff");
+	font-family: 'Noto Sans';
+	src: url('../fonts/noto-sans/notosans-semibold-webfont.woff2')
+			format('woff2'),
+		url('../fonts/noto-sans/notosans-semibold-webfont.woff') format('woff');
 	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
@@ -55,55 +55,55 @@
 
 /* josefin slab */
 @font-face {
-	font-family: "Josefin Slab";
-	src: url("../fonts/josefin-slab/josefinslab-regular.woff2") format("woff2"),
-		url("../fonts/josefin-slab/josefinslab-regular.woff") format("woff");
+	font-family: 'Josefin Slab';
+	src: url('../fonts/josefin-slab/josefinslab-regular.woff2') format('woff2'),
+		url('../fonts/josefin-slab/josefinslab-regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Josefin Slab";
-	src: url("../fonts/josefin-slab/josefinslab-semibold.woff2") format("woff2"),
-		url("../fonts/josefin-slab/josefinslab-semibold.woff") format("woff");
+	font-family: 'Josefin Slab';
+	src: url('../fonts/josefin-slab/josefinslab-semibold.woff2') format('woff2'),
+		url('../fonts/josefin-slab/josefinslab-semibold.woff') format('woff');
 	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Josefin Slab";
-	src: url("../fonts/josefin-slab/josefinslab-bold.woff2") format("woff2"),
-		url("../fonts/josefin-slab/josefinslab-bold.woff") format("woff");
+	font-family: 'Josefin Slab';
+	src: url('../fonts/josefin-slab/josefinslab-bold.woff2') format('woff2'),
+		url('../fonts/josefin-slab/josefinslab-bold.woff') format('woff');
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Josefin Slab";
-	src: url("../fonts/josefin-slab/josefinslab-bolditalic.woff2")
-			format("woff2"),
-		url("../fonts/josefin-slab/josefinslab-bolditalic.woff") format("woff");
+	font-family: 'Josefin Slab';
+	src: url('../fonts/josefin-slab/josefinslab-bolditalic.woff2')
+			format('woff2'),
+		url('../fonts/josefin-slab/josefinslab-bolditalic.woff') format('woff');
 	font-weight: bold;
 	font-style: italic;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Josefin Slab";
-	src: url("../fonts/josefin-slab/josefinslab-light.woff2") format("woff2"),
-		url("../fonts/josefin-slab/josefinslab-light.woff") format("woff");
+	font-family: 'Josefin Slab';
+	src: url('../fonts/josefin-slab/josefinslab-light.woff2') format('woff2'),
+		url('../fonts/josefin-slab/josefinslab-light.woff') format('woff');
 	font-weight: 300;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Josefin Slab";
-	src: url("../fonts/josefin-slab/josefinslab-italic.woff2") format("woff2"),
-		url("../fonts/josefin-slab/josefinslab-italic.woff") format("woff");
+	font-family: 'Josefin Slab';
+	src: url('../fonts/josefin-slab/josefinslab-italic.woff2') format('woff2'),
+		url('../fonts/josefin-slab/josefinslab-italic.woff') format('woff');
 	font-weight: normal;
 	font-style: italic;
 	font-display: swap;
@@ -111,55 +111,55 @@
 
 /* josefin sans */
 @font-face {
-	font-family: "Josefin Sans";
-	src: url("../fonts/josefin-sans/josefinsans-bold.woff2") format("woff2"),
-		url("../fonts/josefin-sans/josefinsans-bold.woff") format("woff");
+	font-family: 'Josefin Sans';
+	src: url('../fonts/josefin-sans/josefinsans-bold.woff2') format('woff2'),
+		url('../fonts/josefin-sans/josefinsans-bold.woff') format('woff');
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Josefin Sans";
-	src: url("../fonts/josefin-sans/josefinsans-bolditalic.woff2")
-			format("woff2"),
-		url("../fonts/josefin-sans/josefinsans-bolditalic.woff") format("woff");
+	font-family: 'Josefin Sans';
+	src: url('../fonts/josefin-sans/josefinsans-bolditalic.woff2')
+			format('woff2'),
+		url('../fonts/josefin-sans/josefinsans-bolditalic.woff') format('woff');
 	font-weight: bold;
 	font-style: italic;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Josefin Sans";
-	src: url("../fonts/josefin-sans/josefinsans-italic.woff2") format("woff2"),
-		url("../fonts/josefin-sans/josefinsans-italic.woff") format("woff");
+	font-family: 'Josefin Sans';
+	src: url('../fonts/josefin-sans/josefinsans-italic.woff2') format('woff2'),
+		url('../fonts/josefin-sans/josefinsans-italic.woff') format('woff');
 	font-weight: normal;
 	font-style: italic;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Josefin Sans";
-	src: url("../fonts/josefin-sans/josefinsans-regular.woff2") format("woff2"),
-		url("../fonts/josefin-sans/josefinsans-regular.woff") format("woff");
+	font-family: 'Josefin Sans';
+	src: url('../fonts/josefin-sans/josefinsans-regular.woff2') format('woff2'),
+		url('../fonts/josefin-sans/josefinsans-regular.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Josefin Sans";
-	src: url("../fonts/josefin-sans/josefinsans-light.woff2") format("woff2"),
-		url("../fonts/josefin-sans/josefinsans-light.woff") format("woff");
+	font-family: 'Josefin Sans';
+	src: url('../fonts/josefin-sans/josefinsans-light.woff2') format('woff2'),
+		url('../fonts/josefin-sans/josefinsans-light.woff') format('woff');
 	font-weight: 300;
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
-	font-family: "Josefin Sans";
-	src: url("../fonts/josefin-sans/josefinsans-semibold.woff2") format("woff2"),
-		url("../fonts/josefin-sans/josefinsans-semibold.woff") format("woff");
+	font-family: 'Josefin Sans';
+	src: url('../fonts/josefin-sans/josefinsans-semibold.woff2') format('woff2'),
+		url('../fonts/josefin-sans/josefinsans-semibold.woff') format('woff');
 	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
@@ -169,7 +169,7 @@
  * global styles 
  */
 body {
-	font-family: "Noto Sans", sans-serif;
+	font-family: 'Noto Sans', sans-serif;
 	@apply text-gray-600 dark:text-gray-300 leading-8;
 }
 
@@ -182,7 +182,7 @@ h2,
 h3,
 h4,
 h5 {
-	font-family: "Josefin Sans";
+	font-family: 'Josefin Sans';
 	@apply text-gray-900 dark:text-gray-100 font-semibold leading-8;
 }
 
@@ -218,7 +218,7 @@ a:hover .arrow {
  * typography
  */
 .font-display {
-	font-family: "Josefin Sans";
+	font-family: 'Josefin Sans';
 }
 
 .apply-highlight-heading {

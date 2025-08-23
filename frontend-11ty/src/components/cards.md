@@ -1,8 +1,8 @@
 ---
-layout: "layouts/components.njk"
-meta_title: "Card Components"
-meta_description: "TailwindCSS card components"
-page_title: "Cards"
+layout: 'layouts/components.njk'
+meta_title: 'Card Components'
+meta_description: 'TailwindCSS card components'
+page_title: 'Cards'
 ---
 
 ## Cards
