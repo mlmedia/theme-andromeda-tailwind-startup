@@ -1,8 +1,8 @@
 ---
-layout: 'layouts/components.njk'
-meta_title: 'Components'
-meta_description: 'Library of UI components'
-page_title: 'Components'
+layout: "layouts/components.njk"
+meta_title: "Components"
+meta_description: "Library of UI components"
+page_title: "Components"
 ---
 
 ## Components

@@ -26,7 +26,7 @@ function App() {
 
 		const observer = new IntersectionObserver(
 			observerCallback,
-			observerOptions
+			observerOptions,
 		);
 
 		document
