@@ -39,16 +39,18 @@ Edit the data files under `src/data/` to update services, team members and portf
 
 ## Code formatting with Prettier
 
-Use the command line `npx prettier` to format the entire directory.
+We use Prettier to keep code style consistent. Prettier automatically formats code so spacing, semicolons, and indentation are the same for everyone.
 
-Check first (optional)
+Check formatting (shows files that need changes):
 
 ```
 npx prettier --check "**/*.{js,jsx,ts,tsx,json,css,scss,html,md}"
 ```
 
-Write
+Format files (writes changes in place):
 
 ```
 npx prettier --write "**/*.{js,jsx,ts,tsx,json,css,scss,html,md}"
 ```
+
+If you install the Prettier – Code Formatter extension in VS Code and enable `"editor.formatOnSave": true`, files will format automatically on save using the project’s `.prettierrc`.
