@@ -4,9 +4,9 @@ Andromeda is a minimalist one‑page theme built with Tailwind CSS and Eleventy.
 
 ## Features
 
--   Predefined sections: hero, services, portfolio, team and contact
--   Image shortcode for responsive assets
--   Dark‑mode toggle and mobile navigation
+- Predefined sections: hero, services, portfolio, team and contact
+- Image shortcode for responsive assets
+- Dark‑mode toggle and mobile navigation
 
 ## Getting Started
 
@@ -36,3 +36,19 @@ Upload the contents of the `dist/` directory to your static hosting provider (Ne
 ## Customization
 
 Edit the data files under `src/data/` to update services, team members and portfolio items.
+
+## Code formatting with Prettier
+
+Use the command line `npx prettier` to format the entire directory.
+
+Check first (optional)
+
+```
+npx prettier --check "**/*.{js,jsx,ts,tsx,json,css,scss,html,md}"
+```
+
+Write
+
+```
+npx prettier --write "**/*.{js,jsx,ts,tsx,json,css,scss,html,md}"
+```

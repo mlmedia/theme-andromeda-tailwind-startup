@@ -32,7 +32,7 @@ module.exports = function (eleventyConfig) {
 			)}/`,
 			filenameFormat: function (id, src, width, format, options) {
 				return `${fileName}-${width}.${format}`;
-			},
+			}
 		});
 
 		return `<picture class="w-full h-full">
@@ -60,7 +60,9 @@ module.exports = function (eleventyConfig) {
 			ready: function (err, bs) {
 				bs.addMiddleware("*", (req, res) => {
 					if (!fs.existsSync(NOT_FOUND_PATH)) {
-						console.error(`404 page not found at ${NOT_FOUND_PATH}`);
+						console.error(
+							`404 page not found at ${NOT_FOUND_PATH}`
+						);
 						throw new Error(
 							`Expected a \`${NOT_FOUND_PATH}\` file but could not find one. Did you create a 404.html template?`
 						);
@@ -69,14 +71,14 @@ module.exports = function (eleventyConfig) {
 					const content_404 = fs.readFileSync(NOT_FOUND_PATH);
 					/* Add 404 HTTP status code in request header */
 					res.writeHead(404, {
-						"Content-Type": "text/html; charset=UTF-8",
+						"Content-Type": "text/html; charset=UTF-8"
 					});
 					/* Provide the 404 content without redirect */
 					res.write(content_404);
 					res.end();
 				});
-			},
-		},
+			}
+		}
 	});
 
 	/* return config settings */
@@ -88,7 +90,7 @@ module.exports = function (eleventyConfig) {
 			input: "src",
 			output: "dist",
 			data: "data",
-			includes: "includes",
-		},
+			includes: "includes"
+		}
 	};
 };

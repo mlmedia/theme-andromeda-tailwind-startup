@@ -12,7 +12,7 @@ function App() {
 		const observerOptions = {
 			root: null,
 			rootMargin: "0px",
-			threshold: 0.1,
+			threshold: 0.1
 		};
 
 		const observerCallback = (entries, observer) => {
@@ -26,7 +26,7 @@ function App() {
 
 		const observer = new IntersectionObserver(
 			observerCallback,
-			observerOptions,
+			observerOptions
 		);
 
 		document

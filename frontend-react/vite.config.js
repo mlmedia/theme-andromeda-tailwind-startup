@@ -10,12 +10,12 @@ export default defineConfig({
 			targets: [
 				{ src: "src/assets/fonts", dest: "assets" },
 				{ src: "src/assets/icons", dest: "assets" },
-				{ src: "src/assets/images", dest: "assets" },
-			],
-		}),
+				{ src: "src/assets/images", dest: "assets" }
+			]
+		})
 	],
 	server: {
-		open: true,
+		open: true
 	},
 	build: {
 		rollupOptions: {
@@ -30,8 +30,8 @@ export default defineConfig({
 					return "assets/[name]-[hash][extname]";
 				},
 				chunkFileNames: "js/[name]-[hash].js",
-				entryFileNames: "js/[name]-[hash].js",
-			},
-		},
-	},
+				entryFileNames: "js/[name]-[hash].js"
+			}
+		}
+	}
 });
