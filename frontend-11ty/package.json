@@ -4,6 +4,7 @@
 	"description": "",
 	"main": "tailwind.config.js",
 	"scripts": {
+		"preinstall": "node ../scripts/check-node-version.js",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"sass": "node-sass --watch assets/scss -o assets/css --output-style compressed",
 		"tailwind": "npx tailwindcss -i ./src/input.css -o ./dist/assets/css/style.css --watch --minify",
@@ -21,5 +22,8 @@
 	"devDependencies": {
 		"concurrently": "^9.2.0",
 		"tailwindcss": "^3.2.4"
+	},
+	"engines": {
+		"node": ">=24"
 	}
 }
